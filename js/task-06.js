@@ -3,7 +3,7 @@ const input = document.getElementById('validation-input');
 
   input.addEventListener('blur', () => {
     const text = input.value;
-    if (text.length === length) {
+    if (Number(text.length) === Number(length)) {
       input.classList.remove('invalid');
       input.classList.add('valid');
     } else {
